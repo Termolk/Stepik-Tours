@@ -35,4 +35,5 @@ def page_not_found(e):
     return render_template('404.html', data=data), 404
 
 
-app.run('0.0.0.0', 8011, debug=True)
+if __name__ == '__main__':
+    app.run()
